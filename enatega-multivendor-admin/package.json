@@ -8,9 +8,9 @@
     "yarn": "Please use npm instead."
   },
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && cross-env NODE_OPTIONS='--inspect' next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
     "prepare": "husky",
